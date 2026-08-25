@@ -137,9 +137,13 @@ video {
     -webkit-background-clip: text;
 }
 
-@media (max-width:425px) {
+@media (max-width:767px) {
     header {
-        padding: 30px 20px;
+        padding: 16px 20px;
+    }
+
+    header img {
+        margin-right: 0;
     }
 
     nav {
@@ -167,17 +171,27 @@ video {
 
     .background {
         width: 100%;
-        min-height: 100vh;
-        height: auto;
-         background-size: cover;
+        min-height: 100svh;
+        height: 100svh;
+        padding: 100px 20px 40px;
+        background-size: cover;
+        background-position: 30% center;
     }
 
     .background img {
-        margin-top: 650px;
+        width: min(100%, 320px);
+        height: auto;
+        margin-top: 0;
     }
 
     .section-two {
         width: 100%;
+        padding: 32px 20px;
+    }
+
+    .section-two img {
+        width: min(100%, 320px);
+        height: auto;
     }
 
     .video-group {
